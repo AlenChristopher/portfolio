@@ -89,11 +89,11 @@
 
   .about-row {
     grid-template-columns: 1fr;
+    margin-bottom: 40px;
   }
 
-  .about-row {
-    row-gap: 50px;
-    margin-bottom: 50px;
+  .about-skills {
+    grid-template-columns: 1fr;
   }
 
   .nav-list {
