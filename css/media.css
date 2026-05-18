@@ -1,30 +1,25 @@
 /* CONTAINER - FIX FOR RESPONSIVE */
 .container {
-  max-width: 1000px;
+  max-width: 100%;
   margin: 0 auto;
-  padding: 0 30px;
+  padding: 0 40px;
   width: 100%;
   box-sizing: border-box;
 }
 
 .container-lg {
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
-  padding: 0 30px;
+  padding: 0 40px;
   width: 100%;
   box-sizing: border-box;
 }
 
 /* RESPONSIVE PADDING */
 @media (max-width: 1320px) {
-  .container-lg {
-    max-width: 95%;
-    padding: 0 30px;
-  }
-
+  .container-lg,
   .container {
-    max-width: 95%;
-    padding: 0 30px;
+    padding: 0 35px;
   }
 
   .hero-content {
@@ -39,7 +34,7 @@
 @media (max-width: 1200px) {
   .container-lg,
   .container {
-    padding: 0 25px;
+    padding: 0 30px;
   }
 
   .title {
@@ -68,7 +63,7 @@
 @media (max-width: 977px) {
   .container-lg,
   .container {
-    padding: 0 20px;
+    padding: 0 25px;
   }
 
   .title {
