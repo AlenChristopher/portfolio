@@ -299,11 +299,24 @@ h5 {
 
 .about-row {
   display: grid;
-  grid-template-columns: 1.3fr 1fr;
+  grid-template-columns: 1fr 1fr;
   justify-content: center;
-  gap: 90px;
+  gap: 60px;
   margin-bottom: 80px;
   color: var(--supportive-text-color);
+  align-items: flex-start;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.about-skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .about-descr {
@@ -353,14 +366,20 @@ h5 {
 }
 
 .services-row {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 50px;
-  justify-content: space-between;
+  justify-content: center;
+  margin-top: 50px;
 }
 
 .service-card {
-  max-width: 300px;
+  max-width: 100%;
+  padding: 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .service-card-img {
