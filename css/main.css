@@ -421,7 +421,7 @@ h5 {
 .projects-row {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
+  gap: 50px;
   justify-content: center;
   width: 100%;
 }
@@ -433,6 +433,14 @@ h5 {
   max-width: 100%;
   width: 100%;
   cursor: pointer;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 .project-box a {
