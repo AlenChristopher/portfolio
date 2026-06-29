@@ -419,16 +419,20 @@ h5 {
 }
 
 .projects-row {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
   justify-content: center;
+  width: 100%;
 }
 
 .project-box {
   position: relative;
   overflow: hidden;
   display: block;
-  max-width: 510px;
+  max-width: 100%;
+  width: 100%;
+  cursor: pointer;
 }
 
 .project-box a {
