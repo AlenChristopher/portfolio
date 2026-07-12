@@ -299,27 +299,23 @@ h5 {
 
 .about-row {
   display: grid;
-  grid-template-columns: 1fr;
-  justify-content: center;
-  gap: 0;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 60px;
+  align-items: flex-start;
   margin-bottom: 60px;
-  color: var(--supportive-text-color);
 }
 
 .about-content {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  margin-bottom: 60px;
-  max-width: 800px;
 }
 
 .about-skills {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
+  grid-template-columns: 1fr;
+  gap: 25px;
   width: 100%;
-  max-width: 800px;
 }
 
 .about-descr {
