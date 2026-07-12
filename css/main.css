@@ -299,8 +299,8 @@ h5 {
 
 .about-row {
   display: grid;
-  grid-template-columns: 1.5fr 1fr;
-  gap: 60px;
+  grid-template-columns: 1fr;
+  gap: 50px;
   align-items: flex-start;
   margin-bottom: 60px;
 }
@@ -309,12 +309,13 @@ h5 {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  max-width: 900px;
 }
 
 .about-skills {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 25px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
   width: 100%;
 }
 
