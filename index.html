@@ -391,7 +391,7 @@
           <img class="project-img" src="img/works/06.jpg" alt="Project 6" />
           <div class="project-mask">
             <div class="project-caption">
-              <h5 class="white">Power BI Analytics Dashboard</h5>
+              <h5 class="white">Ergonomic Posture Assessment</h5>
               <p class="white">Click for details →</p>
             </div>
           </div>
@@ -756,30 +756,39 @@
   <div id="modal-project-6" class="modal">
     <div class="modal-content">
       <span class="modal-close">&times;</span>
-      <h2>Power BI Analytics Dashboard</h2>
+      <h2>Browser-Based Ergonomic Posture Assessment Tool</h2>
       <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 30px;">
         <div style="background: #f0f0f0; padding: 20px; border-radius: 8px; display: flex; align-items: center; justify-content: center;">
-          <p>Power BI Dashboard Screenshot</p>
+          <p>Posture Assessment Interface</p>
         </div>
         <div>
           <h3>Project Overview</h3>
+          <p><strong>Real-Time Computer Vision-Based Ergonomic Assessment</strong></p>
+          
           <h4>Objective:</h4>
-          <p>Create comprehensive KPI dashboard for executive-level business intelligence.</p>
-          <h4>Features:</h4>
-          <ul style="margin-left: 20px;">
-            <li>Real-time data visualization</li>
-            <li>Key Performance Indicators (KPIs)</li>
-            <li>Trend analysis</li>
-            <li>Interactive filters and drill-downs</li>
-            <li>Automated alerts</li>
-            <li>Executive summary views</li>
+          <p>Build a browser-based ergonomic posture assessment tool that scores seated desk posture in real time using computer vision.</p>
+          
+          <h4>Key Features:</h4>
+          <ul style="margin-left: 20px; line-height: 1.8;">
+            <li><strong>Real-time Pose Estimation:</strong> Live webcam processing with 17-point body keypoint tracking</li>
+            <li><strong>Personalized Calibration:</strong> Scores measured against user's own baseline posture, not fixed universal thresholds</li>
+            <li><strong>Multi-Joint Scoring:</strong> Evaluates neck alignment, shoulder symmetry, and elbow angle with weighted overall score</li>
+            <li><strong>Guideline-Referenced:</strong> Elbow angle validated against OSHA/NIOSH desk-posture guidelines (90°–120° range)</li>
+            <li><strong>Confidence Filtering:</strong> Temporally smoothed readings prevent noisy single-frame detection errors</li>
+            <li><strong>Live Dashboard:</strong> Custom web interface with real-time score gauge and per-metric breakdown</li>
           </ul>
-          <h4>Data Sources:</h4>
-          <p>SQL databases, Excel data, cloud services integrated seamlessly</p>
+          
+          <h4>Technical Architecture:</h4>
+          <p>Flask backend serving a custom web interface with live score visualization</p>
+          
+          <h4>Data Privacy:</h4>
+          <p>Live webcam video processed locally — no external datasets, no stored video, no data transmission. All inference runs on-device.</p>
+          
           <h4>Impact:</h4>
-          <p>Enabled data-driven decision making and reduced reporting time by 80%</p>
-          <h4>Tools:</h4>
-          <p>Power BI, DAX, SQL, Data Modeling</p>
+          <p>End-to-end computer vision pipeline demonstrating pose detection to defensible scoring system. Positioned as automated alternative to manual ergonomic assessments (DSE workstation reviews).</p>
+          
+          <h4>Tools & Technologies:</h4>
+          <p>Python, Ultralytics YOLO26-Pose, OpenCV, Flask, NumPy, HTML/CSS/JavaScript</p>
         </div>
       </div>
     </div>
